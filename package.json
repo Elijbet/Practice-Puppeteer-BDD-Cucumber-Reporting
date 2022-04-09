@@ -1,0 +1,21 @@
+{
+  "name": "pptr-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f json:cucumber_report.json",
+    // grab json, transform into HTML visualization of the test run
+    "generate:report": "node report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "prettier": "^2.1.1",
+    "puppeteer": "^5.2.1"
+  }
+}
